@@ -127,6 +127,7 @@ container_push = rule(
             cfg = "host",
             executable = True,
             allow_files = True,
+            python_version = "PY2",
         ),
         "_tag_tpl": attr.label(
             default = Label("//container:push-tag.sh.tpl"),
